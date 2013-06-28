@@ -12,7 +12,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.google.android</groupId>
+      <groupId>android</groupId>
       <artifactId>android</artifactId>
     </dependency>
     <dependency>
@@ -31,7 +31,7 @@
         <extensions>true</extensions>
         <configuration>
           <sdk>
-            <platform>15</platform>
+            <platform>17</platform>
           </sdk>
           <dexJvmArguments>
             <jvmArgument>-Xms256m</jvmArgument>

@@ -46,7 +46,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.6</java.version>
-    <android.maven.version>3.4.1</android.maven.version>
+    <android.maven.version>3.6.0</android.maven.version>
     <github.global.server>github</github.global.server>
     <repository.name>StickyScrollViewItems</repository.name>
     <repository.owner>stefanodacchille</repository.owner>
@@ -55,16 +55,16 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.google.android</groupId>
+        <groupId>android</groupId>
         <artifactId>android</artifactId>
-        <version>4.0.1.2</version>
+        <version>4.2_r1</version>
         <scope>provided</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
 
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <sourceDirectory>/library/src</sourceDirectory>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -83,15 +83,11 @@
             <noJekyll>true</noJekyll>
             <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
             <branch>refs/heads/mvn-repo</branch>
-            <!-- <includes>
-              <include>**/*</include>
-            </includes> -->
             <merge>true</merge>
             <repositoryName>${repository.name}</repositoryName>
             <repositoryOwner>${repository.owner}</repositoryOwner>
         </configuration>
         <executions>
-          <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
           <execution>
             <goals>
               <goal>site</goal>
