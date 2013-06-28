@@ -6,7 +6,7 @@
     <artifactId>parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>sample</artifactId>
+  <artifactId>stickyscrollview-sample</artifactId>
   <packaging>apk</packaging>
   <name>StickyScrollView - Sample</name>
 
@@ -17,7 +17,7 @@
     </dependency>
     <dependency>
       <groupId>com.emilsjolander.components.StickyScrollViewItems</groupId>
-      <artifactId>library</artifactId>
+      <artifactId>stickyscrollview</artifactId>
       <version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
